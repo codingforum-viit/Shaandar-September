@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        long sum= (n*(n+1))/2;
+        long ans=0;
+        long b[]= new long[n];
+        for(int i=0;i<n;i++){
+            b[i]= in.nextLong();
+            ans+=b[i];
+        }
+        if(sum<=ans){
+            System.out.println("YES");
+        }else{
+            System.out.println("NO");
+        }
+        
+    }
+}
